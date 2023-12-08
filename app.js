@@ -9,7 +9,6 @@ btn.addEventListener("click", () => {
 
 // Fetching Products
 
-let itemContainer = document.querySelector(".items-container");
 let cartItems;
 onLoad();
 
@@ -28,22 +27,30 @@ function addToCart(itemId) {
 
 function displayCartCount() {
   let cartCounterElement = document.querySelector(".cart-counter");
+  let cartCounterMobileElement = document.querySelector(".cart-counter-mobile");
+
   if (cartItems.length > 0) {
     cartCounterElement.style.visibility = "visible";
     cartCounterElement.innerText = cartItems.length;
+    cartCounterMobileElement.innerText = cartItems.length;
   } else {
     cartCounterElement.style.visibility = "hidden";
   }
 }
 
 function productsDisplay() {
+  let itemContainer = document.querySelector(".items-container");
+
+  if (itemContainer == null) {
+    return "";
+  }
   let innerHTMLVariable = "";
   products.forEach((element) => {
     innerHTMLVariable += ` <div class="col-lg-3 col-md-4 col-sm-6 my-2">
       <div class="product-card mx-1">
-          <img src="${element.image}" alt="">
+          <img src="${element.image}" alt="" onclick="window.location.href='single-product.html'">
           <div class="p-body">
-              <h4 class="p-title">${element.productName}</h4>
+              <h4 class="p-title" onclick="window.location.href='single-product.html'">${element.productName}</h4>
               <div class="d-flex p-group">
                   <p>Gene: <span>${element.gene}</span></p>
                   <p>Age: <span>${element.age}</span></p>

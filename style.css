@@ -651,3 +651,36 @@ padding-bottom: 0.5rem;
     color: white;
     cursor: pointer;
 }
+
+/* Cart page */
+
+.cart-bg-color {
+    background-color: #d0d2d248;
+    height: inherit;
+    padding: 4%;
+    border-radius: 0.6rem;
+    margin: 10px 0;
+}
+
+.cart-right-part {
+padding: 0 2rem;
+}
+
+.cart-item-image img {
+    width: 100px;
+    height: 100px;
+}
+
+.cart-info-container {
+    position: relative;
+}
+
+.remove-from-cart {
+    position: absolute;
+    top: 0;
+    right: 2rem;
+    background-color: var(--primary);
+    padding: 10px 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}   

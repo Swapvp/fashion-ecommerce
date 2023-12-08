@@ -120,6 +120,12 @@
         width: 40px;
     }
 
+    .mobile-cart {
+        position: absolute;
+        top: 25px;
+        right: 5rem;
+    }
+
 }
 
 
@@ -210,6 +216,22 @@
         .footer-padding  {
             margin-bottom: 20px;
         }
+
+        .mobile-cart {
+            position: absolute;
+            top: 25px;
+            right: 3rem;
+        }
+
+        .remove-from-cart {
+            position: absolute;
+            top: 0;
+            right: 0.5rem;
+            background-color: var(--primary);
+            padding: 10px 15px;
+            border-radius: 50%;
+            cursor: pointer;
+        }
        
 }
 
@@ -217,5 +239,15 @@
     .wrapper {
         margin: 30px 20px;
         padding: 40px 15px 15px 15px;
+    }
+
+    .remove-from-cart {
+        position: absolute;
+        top: 22px;
+        right: 0px;
+        background-color: var(--primary);
+        padding: 10px 15px;
+        border-radius: 50%;
+        cursor: pointer;
     }
 }
