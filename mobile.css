@@ -1,0 +1,214 @@
+@media only screen and (max-width: 1440px) {
+    .p-shop {
+        padding: 9px 13px;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 2rem;
+        font-size: 0.9rem;
+        position: absolute;
+        right: 0.6rem;
+        bottom: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .main-nav a, .secondary-nav a {
+        text-decoration: none;
+        margin: 0px 0.1rem;
+        font-size: 1.1rem;
+    }
+
+    .m-menu {
+        position: absolute;
+        right: 50px;
+        top: 1.5rem;
+    }
+
+    .sidebar {
+        height: 100vh;
+        width: 40%;     
+        background-color: beige;
+        position: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 1s ease-in-out;
+    }
+
+    .hide {
+    transform: translateX(-640px);
+    }
+
+    .main-nav {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-nav a {
+        margin-top: 1rem;
+    }
+
+    .nav-line {
+        margin: 2rem 0;
+        background-color: #f8f8ff;
+        padding: 1.2rem;
+        border-radius: 1rem;
+        color: var(--primary);
+        font-size: 0.7rem;
+        width: 30%;
+    }
+
+    .p-shop {
+        padding: 6px 9px;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 2rem;
+        font-size: 0.6rem;
+        position: absolute;
+        right: 0rem;
+        bottom: 4.5rem;
+    }
+
+    .contact-block {
+        background-color: var(--primary);
+        color: white;
+        padding: 2rem;
+        height: 185px;
+        margin: 1rem auto;
+    }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav-line {
+        margin: 2rem 0;
+        background-color: #f8f8ff;
+        padding: 0.8rem;
+        border-radius: 1rem;
+        color: var(--primary);
+        font-size: 0.7rem;
+        width: 60%;
+    }
+
+    .feature-heading {
+        font-size: 2rem;
+    }
+
+    .right {
+        width: 100%;
+        padding-right: 0px;
+    }
+    .p-shop {
+        padding: 6px 9px;
+        background-color: var(--primary);
+        color: white;
+        border-radius: 2rem;
+        font-size: 0.6rem;
+        position: absolute;
+        right: 0rem;
+        bottom: 1rem;
+    }
+
+    .subscribe-input-container input[type=button] {
+        border-radius: 8px;
+        background-color: var(--primary);
+        color: white;
+        width: 25%;
+    }
+    .whatsapp img {
+        width: 40px;
+    }
+
+}
+
+
+
+@media only screen and (max-width: 426px ) {
+
+    .hide {
+        transform: translateX(-360px);
+        }
+
+        .m-menu {
+            right: 1rem; 
+        }
+
+        .sidebar {
+            width: 80%;
+        }
+
+        .nav-line {
+            margin: 0.6rem 0;
+            background-color: #f8f8ff;
+            padding: 0.8rem;
+            border-radius: 1rem;
+            color: var(--primary);
+            font-size: 0.7rem;
+            width: 80%;
+        }
+
+        .feature-heading {
+            font-size: 1.5rem;
+        }
+
+        .right {
+            width: 100%;
+            padding-right: 0px;
+        }
+
+        .pagination a {
+            color: black;
+            padding: 4px 8px;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+
+        .subscribe-container {
+            background-color: var(--primary);
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        .subscribe-input-container input[type=button] {
+            border-radius: 8px;
+            background-color: var(--primary);
+            color: white;
+            width: 100%;
+        }
+
+        .subscribe-input-container input[type=text] {
+            width: 100%;
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 10px auto;
+        }
+
+        .subscribe-container h4 {
+            text-align: center;
+            margin: 2rem auto;
+            color: white;
+            font-size: 16px;
+        }
+
+        .sort-container {
+            background-color: transparent;
+            border: 1px solid var(--primary);
+            border-radius: 1.5rem;
+            font-size: 12px;
+            text-align: center;
+        }
+
+        .bg-img {
+            background: url(/assets/bannerbg.jpg) no-repeat scroll center/cover;
+            height: 100px;
+        }
+        .contact-btn, .chat-btn, .add-cart, .pay {
+            margin: 0.5rem auto;
+            width: 100%;
+        }
+        .footer-padding  {
+            margin-bottom: 20px;
+        }
+       
+}
