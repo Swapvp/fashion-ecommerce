@@ -48,9 +48,9 @@ function productsDisplay() {
   products.forEach((element) => {
     innerHTMLVariable += ` <div class="col-lg-3 col-md-4 col-sm-6 my-2">
       <div class="product-card mx-1">
-          <img src="${element.image}" alt="" onclick="window.location.href='single-product.html'">
+          <img src="${element.image}" alt="" onclick="window.location.href='/pages/single-product.html'">
           <div class="p-body">
-              <h4 class="p-title" onclick="window.location.href='single-product.html'">${element.productName}</h4>
+              <h4 class="p-title" onclick="window.location.href='/pages/single-product.html'">${element.productName}</h4>
               <div class="d-flex p-group">
                   <p>Gene: <span>${element.gene}</span></p>
                   <p>Age: <span>${element.age}</span></p>

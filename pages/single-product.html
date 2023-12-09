@@ -10,8 +10,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mobile.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/mobile.css">
 
     <title>Mirraw</title>
 </head>
@@ -23,10 +23,10 @@
         <div class="container">
             <nav class="d-flex justify-content-between align-items-center">
                 <div class="logo">
-                    <img src="/assets/Logo.png" alt="logo" onclick="window.location.href='index.html'">
+                    <img src="/assets/Logo.png" alt="logo" onclick="window.location.href='/index.html'">
                 </div>
                 <div class="main-nav d-none d-lg-block">
-                    <a href="index.html">Home</a>
+                    <a href="/index.html">Home</a>
                     <a href="product.html">Products</a>
                     <a href="contact.html">Contact </a>
                 </div>
@@ -55,7 +55,7 @@
 
             <div class="sidebar hide">
                 <div class="main-nav">
-                    <a href="index.html" class="active">Home</a>
+                    <a href="/index.html" class="active">Home</a>
                     <a href="product.html">Products</a>
                     <a href="contact.html">Contact </a>
                     <a href="login.html" class="get-started">Get started</a>
@@ -159,7 +159,7 @@
                     </div>
 
                     <div class="shop-btns">
-                        <button class="add-cart">Add to cart</button>
+                        <button class="add-cart" onclick="window.location.href='cart.html'">Add to cart</button>
                         <button class="pay">Pay immediately</button>
                     </div>
 
@@ -240,7 +240,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
-    <script src="app.js"></script>
+    <script src="/js/app.js"></script>
 </body>
 
 <script>
