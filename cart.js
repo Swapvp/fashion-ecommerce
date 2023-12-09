@@ -70,7 +70,7 @@ function generateItemHtml(item) {
   let currentDate = new Date();
 
   // Add 5 days to the current date
-  currentDate.setDate(currentDate.getDate() + 5);
+  currentDate.setDate(currentDate.getDate() + 7);
 
   // Format the date
   let formattedDate = formatDate(currentDate);
