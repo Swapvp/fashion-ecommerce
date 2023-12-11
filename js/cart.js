@@ -8,7 +8,7 @@ function onLoad() {
 }
 
 function loadCartItemsObj() {
-  console.log(cartItems);
+  // console.log(cartItems);
   cartItemsObj = cartItems.map((itemId) => {
     for (let i = 0; i < products.length; i++) {
       if (itemId == products[i].id) {
@@ -16,7 +16,7 @@ function loadCartItemsObj() {
       }
     }
   });
-  console.log(cartItemsObj);
+  // console.log(cartItemsObj);
 }
 
 function cartSummury() {
