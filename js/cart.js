@@ -4,7 +4,7 @@ onLoad();
 function onLoad() {
   loadCartItemsObj();
   displayCartItems();
-  cartSummury();
+  // cartSummury();
 }
 
 function loadCartItemsObj() {
@@ -16,6 +16,10 @@ function loadCartItemsObj() {
       }
     }
   });
+
+  if (cartItemsObj.length > 0) {
+    cartSummury();
+  }
   // console.log(cartItemsObj);
 }
 
@@ -31,6 +35,10 @@ function cartSummury() {
     totalDiscount = (totalPrice * 10) / 100;
   });
   let finalAmountToPay = totalPrice - totalDiscount + convenienceFees;
+
+  if (cartItemsObj.length <= 0) {
+    cartSummuryElement.style.display = "none";
+  }
 
   cartSummuryElement.innerHTML = `<div class="bag-details-container">
   <div class="price-header">PRICE DETAILS (${totalItemsInCart}) </div>
@@ -75,6 +83,7 @@ function removeFromCart(itemId) {
   if (cartItems.length == 0) {
     cartEmpty.style.display = "block";
   }
+
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
   loadCartItemsObj();
   displayCartItems();
