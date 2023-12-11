@@ -60,7 +60,7 @@ function cartSummury() {
 function displayCartItems() {
   let cartRightcontainer = document.querySelector(".cart-items-container");
   let cartEmpty = document.getElementById("cartEmpty");
-  let btnPlaceOrder = document.querySelector(".btn-place-order");
+
   let innerHTML = "";
   cartItemsObj.forEach((element) => {
     cartEmpty.style.display = "none";
@@ -74,7 +74,6 @@ function removeFromCart(itemId) {
   cartItems = cartItems.filter((cartItemId) => cartItemId != itemId);
   if (cartItems.length == 0) {
     cartEmpty.style.display = "block";
-    btnPlaceOrder.style.cursor = "not-allowed";
   }
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
   loadCartItemsObj();
