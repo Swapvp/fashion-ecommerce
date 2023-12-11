@@ -55,7 +55,7 @@ function productsDisplay() {
                   <p>Gene: <span>${element.gene}</span></p>
                   <p>Age: <span>${element.age}</span></p>
               </div>
-              <h6 class="p-price">${element.price}</h6>
+              <h6 class="p-price">N ${element.price}</h6>
               <button class="p-shop" onclick="addToCart(${element.id})"><i class="fa-solid fa-cart-shopping"></i></button>
           </div>
       </div>

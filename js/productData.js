@@ -5,7 +5,7 @@ const products = [
     productName: "Blouse and belted skirt",
     gene: "Female",
     age: "Ranges",
-    price: "N 8,900.00",
+    price: 8900,
   },
   {
     id: "002",
@@ -13,7 +13,7 @@ const products = [
     productName: "Pink ankara mixed gown",
     gene: "Female",
     age: "0 - 11",
-    price: "N 8,900.00",
+    price: 8900,
   },
   {
     id: "003",
@@ -21,7 +21,7 @@ const products = [
     productName: "A - shaped gown",
     gene: "Female",
     agege: "Ranges",
-    price: "N 8,900.00",
+    price: 8900,
   },
   {
     id: "004",
@@ -29,7 +29,7 @@ const products = [
     productName: "Blouse and belted skirt",
     gene: "Female",
     age: "Ranges",
-    price: "N 8,900.00",
+    price: 8900,
   },
   {
     id: "005",
@@ -37,7 +37,7 @@ const products = [
     productName: "Ankara suit",
     gene: "Male",
     age: "Ranges",
-    price: "N 8,900.00",
+    price: 8900,
   },
   {
     id: "006",
@@ -45,7 +45,7 @@ const products = [
     productName: "Browm ball gown",
     gene: "Female",
     age: "0 - 11",
-    price: "N 8,900.00",
+    price: 8900,
   },
   {
     id: "007",
@@ -53,7 +53,7 @@ const products = [
     productName: "Male suit",
     gene: "Male",
     age: "Ranges",
-    price: "N 8,900.00",
+    price: 8900,
   },
   {
     id: "008",
@@ -61,6 +61,6 @@ const products = [
     productName: "Flared gown",
     gene: "Female",
     age: "Ranges",
-    price: "N 8,900.00",
+    price: 8900.0,
   },
 ];
